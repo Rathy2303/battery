@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1E1E1E;
+  position: relative;
+  height: 100vh;
+}
+body main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  padding: 10px;
+  margin: 0 auto;
+}
+body main .battery-bar {
+  display: flex;
+  align-items: center;
+}
+body main .battery-bar .battery {
+  width: 150px;
+  height: 60px;
+  border-radius: 10px;
+  border: 5px solid rgb(255, 255, 255);
+  position: relative;
+  padding: 4px;
+}
+body main .battery-bar .battery #status {
+  background-color: rgb(33, 182, 33);
+  width: 50%;
+  height: 100%;
+  border-radius: 5px;
+}
+body main .battery-bar .battery i {
+  font-size: 28px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body main .battery-bar .battery::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  right: -15px;
+  height: 25px;
+  transform: translate(0, -50%);
+  background-color: rgb(255, 255, 255);
+  width: 15px;
+  display: inline-block;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+body main .battery-bar h1 {
+  font-size: 30px;
+  color: white;
+  font-family: sans-serif;
+  margin-left: 20px;
+}/*# sourceMappingURL=style.css.map */
